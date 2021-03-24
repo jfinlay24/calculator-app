@@ -1,0 +1,13 @@
+.main {
+    background: #1abc9c;
+    padding-top: 30px;
+    padding-bottom: 775px;
+}
+
+.header {
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
