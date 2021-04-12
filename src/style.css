@@ -2,6 +2,7 @@
     background: #1abc9c;
     padding-top: 30px;
     padding-bottom: 775px;
+    font-family: 'Courier New', monospace;
 }
 
 .header {
@@ -10,4 +11,24 @@
     text-align: center;
     color: white;
     font-size: 30px;
+}
+.number-area {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 0px 0px 30px;
+    width: 450px;
+    margin: 0 auto;
+}
+.button {
+    background-color: #996633;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: 'Courier New', monospace;
+
 }
