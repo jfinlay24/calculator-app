@@ -1,7 +1,7 @@
 import React from "react";
 import "../style.css";
 interface CalcButtonProps {
-  buttonNumber: string;
+  buttonNumber: any;
   onClick: (text: string) => void;
 }
 
