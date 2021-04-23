@@ -7,9 +7,9 @@ interface CalculatorProps {
 }
 const Calculator: React.FC<CalculatorProps> = (mes) => {
     const onClick = (text: string) => {
-        // alert('in parent: ' + text);
+        //alert('in parent: ' + {text + text});
     }
-    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const numbers = [1, 2, 3, "+", 4, 5, 6, "-", 7, 8, 9, "*", "C", 0, "=", "/"];
     const listItems = numbers.map((number) =>
         <CalcButton buttonNumber={number} onClick={onClick} />
     );

@@ -12,8 +12,6 @@ const CalcButton: React.FC<CalcButtonProps> = ({ buttonNumber, onClick }) => {
     onClick(buttonNumber);
   }
 
-
-
   return (
     <button className="button" type="button" onClick={buttonClick}>
       {buttonNumber}
