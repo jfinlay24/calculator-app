@@ -7,7 +7,6 @@ interface CalcButtonProps {
 
 const CalcButton: React.FC<CalcButtonProps> = ({ buttonNumber, onClick }) => {
   const buttonClick = () => {
-    alert(buttonNumber);
     console.log(buttonNumber);
     onClick(buttonNumber);
   }
