@@ -2,14 +2,16 @@ import React from "react";
 import "../style.css";
 
 interface DisplayPanelProps {
-    text: string;
+    numbers: string;
 }
 
-const DisplayPanel: React.FC<DisplayPanelProps> = ({text}) => {
+const DisplayPanel: React.FC<DisplayPanelProps> = ({numbers}) => {
     return (
-        <button className="button" type="button">
-      {text}
-    </button>
+        <div> 
+            <h2 className="output-box">
+                <div>{numbers}</div>
+            </h2>
+        </div>
     )
 };
 
