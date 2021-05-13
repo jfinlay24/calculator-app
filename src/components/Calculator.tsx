@@ -10,11 +10,12 @@ const Calculator: React.FC<CalculatorProps> = (mes) => {
     const [buttonClicked, setButtonClicked] = useState('');
     const [calcText, setCalcText] = useState('');
     
-    const onClick = async (text: string) => {
+    const onClick = (calcInput: string) => {
         setCalcText(prevState => {
-            return prevState + text ;
+            return prevState + calcInput ;
         });
         setButtonClicked(calcText);
+        //console.log(calcText);
     }
 
     const numbers = [1, 2, 3, "+", 4, 5, 6, "-", 7, 8, 9, "*", "C", 0, "=", "/"];
@@ -28,7 +29,10 @@ const Calculator: React.FC<CalculatorProps> = (mes) => {
                 <h1>CALC-U-LATER</h1>
             </header>
             <div>
-                <DisplayPanel numbers={buttonClicked} />
+                <DisplayPanel 
+                    numbers={buttonClicked} 
+                    //onNumbersChanged={setButtonClicked}
+                />
             </div>
             <div className="number-area">
                 {listItems}
