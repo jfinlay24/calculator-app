@@ -12,7 +12,6 @@ const DisplayPanel: React.FC<DisplayPanelProps> = ({numbers}) => {
             <h2 className="output-box">
                 <div>
                     {numbers}
-                    {/* onChange={(e) => onNumbersChanged(e.target.value)} */}
                 </div>
             </h2>
         </div>
