@@ -3,7 +3,6 @@ import "../style.css";
 
 interface DisplayPanelProps {
     numbers: string;
-    //onNumbersChanged: string
 }
 
 const DisplayPanel: React.FC<DisplayPanelProps> = ({numbers}) => {
